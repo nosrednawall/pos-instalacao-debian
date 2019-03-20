@@ -1,0 +1,36 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [fc-list]
+# - [git submodule update --init --recursive, Installing submodules]
+#   - [sudo mv /etc/apt/sources.list /etc/apt/sources.list-original]
+#   - [sudo cp -r ~/.dotfiles/sources.list/source-stretch.list /etc/apt/sources.list]
+#   - [sudo apt clean]
+#   - [sudo dpkg --add-architecture i386]
+#   - [sudo apt update]
+#   - [sudo apt upgrade -y]
+#   - [sudo apt install -y wget zsh firmware-linux firmware-linux-nonfree lame libavcodec-extra libav-tools vlc arc arj cabextract lhasa p7zip p7zip-full p7zip-rar rar unrar unace unzip xz-utils zip gpicview xarchiver qpdfview]
+#   - [sudo apt install -y i3 i3-wm i3lock i3status rofi htop feh fonts-font-awesome fonts-mononoki scrot imagemagick xautolock xbacklight pasystray gtk3-engines-breeze kde-style-breeze kde-style-breeze-qt4 kwin-style-breeze parcellite spectacle sddm sddm-theme-elarun thunar-archive-plugin thunar-gtkhash thunar-media-tags-plugin xfce4-places-plugin]
+#   - [sudo apt install -y qbittorrent filezilla chromium ]
+#   - [sudo apt install -y kleopatra pass qtpass ssh]
+#   - [sudo apt install -y android-tools-adb libappindicator1 libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7]
+#   - [sudo apt install -y telegram-desktop]
+
+# - shell:
+#   - sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+#   - wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install.sh | sh
+#   - wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/materia-kde/master/install.sh | sh
+#   - wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/adapta-kde/master/install.sh | sh
+#   - [sudo apt install dirmngr]
+#   - [sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A87FF9DF48BF1C90]
+#   - echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+#   - [sudo apt update]
+#   - [sudo apt install spotify-client]
+#   - wget "https://go.microsoft.com/fwlink/?LinkID=760868" -O vscode.deb && sudo dpkg -i vscode.deb && rm -r vscode.deb
+#   - curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - && sudo apt-get install -y nodejs
+#   - sudo cp ~/.dotfiles/config/i3/i3lock-script /bin/lock && sudo chmod +x /bin/lock
